@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Abc</title>
+    <style>
+        h1
+        {
+            color:orange;
+        }
+        h2
+        {
+            color:blue;
+        }
+        h3
+        {
+            color:green;
+        }
+        .wish
+        {
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my second template</h1>
+    <h2 class="wish">{{greetings}} Welcome !!!</h2>
+    <h2>Now time is {{display_dict}}</h2>
+    <h3>Your name is {{myName}}</h3>
+
+   
+    <img src = "{% static 'images/computer1.png' %}" alt="MyImage">
+</body>
+</html>
